@@ -1,12 +1,12 @@
 <%= form_for(notate) do |f| %>
   <%= f.label :title %>
-  <%= f.text_field :title %>
+  <%= f.text_field :title %><br><br>
 
   <%= f.label :body %>
-  <%= f.text_field :body %>
+  <%= f.text_field :body %><br><br>
 
-  <%= f.label :time %><br>
-  <%= f.time_field :time, value: "%H:%M", min: 'hh:mm:ss', max: 'hh:mm:ss' %>
+  <%= f.label :time %>
+  <%= f.time_field :time, value: "%H:%M", min: 'hh:mm:ss', max: 'hh:mm:ss' %><br><br>
 
   <%= f.hidden_field :user_id, value: current_user.id %>
 

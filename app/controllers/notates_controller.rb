@@ -2,7 +2,7 @@ class NotatesController < ApplicationController
   before_action :authenticate_user!
 
   def index
-    @notate = Notate.all
+    @notates = Notate.all
   end
 
   def new
